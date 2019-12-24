@@ -1,0 +1,11 @@
+<h1>new hand</h1>
+
+<%= form_with scope: :hand, url: hands_path, local: true do |form| %>
+  <p>
+    <%= form.label :cards%>
+    <%= form.text_field :cards%>
+  </p>
+  <p>
+    <%= form.submit%>
+  </p>
+<%end%>
